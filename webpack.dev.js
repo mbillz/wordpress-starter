@@ -2,7 +2,7 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 
-const devUrl = 'http://wpframework.local';
+const devUrl = 'http://wp-framework.local';
 
 module.exports = merge(common, {
   mode: 'development',
