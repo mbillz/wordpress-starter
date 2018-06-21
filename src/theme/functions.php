@@ -25,3 +25,6 @@ function add_image_insert_override($sizes){
 	return $sizes;
 }
 add_filter('intermediate_image_sizes_advanced', 'add_image_insert_override' );
+
+// Add theme title support
+add_theme_support( 'title-tag' );
