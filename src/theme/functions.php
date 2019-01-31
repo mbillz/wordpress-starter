@@ -3,13 +3,6 @@
 // Featured image support
 add_theme_support( 'post-thumbnails' );
 
-// SVG image support
-function cc_mime_types( $mimes ){
-	$mimes['svg'] = 'image/svg+xml';
-	return $mimes;
-}
-add_filter( 'upload_mimes', 'cc_mime_types' );
-
 // Add stylesheets and scripts
 function theme_scripts() {
 	wp_enqueue_style( 'style.css', get_template_directory_uri() . '/css/style.css', false, 1.0 );
@@ -28,3 +21,6 @@ add_filter('intermediate_image_sizes_advanced', 'add_image_insert_override' );
 
 // Add theme title support
 add_theme_support( 'title-tag' );
+
+// ACF
+require_once( __DIR__ . '/acf/acf.php');
