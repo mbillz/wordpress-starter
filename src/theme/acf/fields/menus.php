@@ -97,32 +97,6 @@ if (function_exists('acf_add_local_field_group')) :
           ),
         ),
       ),
-      /**
-       * Footer
-       */
-      array(
-        'key' => 'menus__footer',
-        'label' => 'Footer',
-        'type' => 'tab',
-      ),
-      array(
-        'key' => 'menus__footer__facebook_url',
-        'label' => 'Facebook URL',
-        'name' => 'footer_facebook_url',
-        'type' => 'text',
-      ),
-      array(
-        'key' => 'menus__footer__twitter_url',
-        'label' => 'Twitter URL',
-        'name' => 'footer_twitter_url',
-        'type' => 'text',
-      ),
-      array(
-        'key' => 'menus__footer__instagram_url',
-        'label' => 'Instagram URL',
-        'name' => 'footer_instagram_url',
-        'type' => 'text',
-      ),
     ),
   ));
 

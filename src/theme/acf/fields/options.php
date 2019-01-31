@@ -36,6 +36,32 @@ if (function_exists('acf_add_local_field_group')) :
         'type' => 'image',
       ),
     ),
+    /**
+     * Social
+     */
+    array(
+      'key' => 'menus__social',
+      'label' => 'Social',
+      'type' => 'tab',
+    ),
+    array(
+      'key' => 'menus__social__facebook_url',
+      'label' => 'Facebook URL',
+      'name' => 'social_facebook_url',
+      'type' => 'text',
+    ),
+    array(
+      'key' => 'menus__social__twitter_url',
+      'label' => 'Twitter URL',
+      'name' => 'social_twitter_url',
+      'type' => 'text',
+    ),
+    array(
+      'key' => 'menus__social__instagram_url',
+      'label' => 'Instagram URL',
+      'name' => 'social_instagram_url',
+      'type' => 'text',
+    ),
   ));
 
 endif;
