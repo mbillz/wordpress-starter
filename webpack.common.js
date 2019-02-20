@@ -98,6 +98,10 @@ const config = {
       {
         from: 'src/theme/',
         toType: 'dir'
+      },
+      {
+        from: 'src/plugins/',
+        toType: 'dir'
       }
     ]),
     new ExtractTextPlugin({
