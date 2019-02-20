@@ -66,13 +66,6 @@ const config = {
               publicPath: '../'
             }
           }
-          // {
-          //   loader: 'image-webpack-loader',
-          //   options: {
-          //     bypassOnDebug: true,
-
-          //   }
-          // }
         ]
       }
     ]
@@ -80,18 +73,6 @@ const config = {
   plugins: [
     new FileManagerPlugin({
       onStart: [
-        // {
-        // delete: [
-        // path.resolve(
-        //   __dirname,
-        //   `dist/wp-content/themes/${themeDirectoryName}/**/*.php`
-        // // )
-        // path.resolve(
-        //   __dirname,
-        //   `dist/wp-content/themes/${themeDirectoryName}/img`
-        // )
-        // ]
-        // },
         {
           copy: [
             {
@@ -100,6 +81,14 @@ const config = {
                 __dirname,
                 `dist/wp-content/themes/${themeDirectoryName}`
               )
+            }
+          ]
+        },
+        {
+          copy: [
+            {
+              source: path.resolve(__dirname, 'src/plugins/**/*'),
+              destination: path.resolve(__dirname, 'dist/wp-content/plugins/')
             }
           ]
         }
