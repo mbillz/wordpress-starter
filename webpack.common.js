@@ -101,6 +101,7 @@ const config = {
       },
       {
         from: 'src/plugins/',
+        to: '../../plugins/',
         toType: 'dir'
       }
     ]),
