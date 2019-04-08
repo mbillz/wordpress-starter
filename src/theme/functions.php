@@ -14,6 +14,7 @@ add_action( 'wp_enqueue_scripts', 'theme_scripts' );
 function add_image_insert_override($sizes){
 	unset( $sizes['thumbnail']);
 	unset( $sizes['medium']);
+	unset( $sizes['medium_large']);
 	unset( $sizes['large']);
 	return $sizes;
 }
